@@ -98,5 +98,45 @@ body {
       padding-left: 10px;
       padding-right: 10px;
     }
+    .add-task-actions-container {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      .add-btn {
+        background-color: #db4c13;
+        color: white;
+        border: 1px solid transparent;
+        margin-right: 5px;
+        font-weight: bold;
+        font-size: 13px;
+        padding: 6px 12px 7px 12px;
+        border-radius: 3px !important;
+        &:disabled {
+          background-color: gray;
+        }
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+      .cancel-btn {
+        all: unset;
+        color: #555;
+        cursor: pointer;
+        font-size: 14px;
+        margin: 0px 5px;
+      }
+    }
+  }
+
+  .task-items-container {
+    margin-top: 40px;
+    padding: 0 20px;
+    .task-item {
+      display: flex;
+      justify-content: space-between;
+      &:not(:last-child) {
+        border-bottom: 1px solid #db4c3f;
+      }
+    }
   }
 }
